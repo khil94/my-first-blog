@@ -1,0 +1,63 @@
+
+.header{
+    margin-top:0px;
+    width:100%;
+    height: 30px;
+    background-color: black;
+    padding : 15px;
+    display: inline-block;
+}
+
+.header>.mainLogo{
+    width: max-content;
+    display:inline-block;
+    margin-right:50px;
+}
+
+.mainLogo>a, .navItem li>a {
+    font-family: 'Sunflower', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav{
+    position: absolute;
+    top:0;
+    right:15px;
+    display: inline-block;
+}
+
+.navItem>li{
+    display: inline-block;
+    margin-right:10px;
+}
+
+.introduce{
+    height:inherit;
+    display:block;
+}
+
+.section{
+    background-image: url('./src/1.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+
+    width: inherit;
+    height:inherit;
+
+    z-index: -1;
+    background-size:cover;
+
+    filter: blur(4px);
+}
+
+body{
+   margin:0;
+   height:100vh;
+   width:100vw;
+   overflow-x:hidden;
+}
+
