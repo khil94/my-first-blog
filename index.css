@@ -38,26 +38,38 @@
     display:block;
 }
 
-.section{
-    background-image: url('./src/1.jpg');
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.bgImage{
     background-repeat: no-repeat;
     position: absolute;
     top:0;
     left:0;
 
-    width: inherit;
-    height:inherit;
+    margin:0;
+    height:100vh;
+    width:100vw;
+    overflow-x:hidden;
 
     z-index: -1;
     background-size:cover;
 
-    filter: blur(4px);
+    animation: fadeIn 0.5s linear;
+    
+}
+
+a{
+    cursor: pointer;
 }
 
 body{
-   margin:0;
-   height:100vh;
-   width:100vw;
-   overflow-x:hidden;
+    margin:0
 }
 
