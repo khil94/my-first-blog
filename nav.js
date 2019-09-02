@@ -8,7 +8,9 @@ function init(){
 
 function ajaxListener(){
     fetch('./nav/profile.html').then(function(response){
-        console.log(response);
+        if(response.status != '404'){
+            console.log(response);
+        }else console.log('failed.');
     })
 }
 
