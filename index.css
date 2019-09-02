@@ -14,8 +14,9 @@
     margin-right:50px;
 }
 
-.mainLogo>a, .navItem li>a {
+.mainLogo>a, .navItems li>a {
     font-family: 'Sunflower', sans-serif;
+
     color: white;
     text-decoration: none;
 }
@@ -28,7 +29,7 @@
     display: inline-block;
 }
 
-.navItem>li{
+.navItems>li{
     display: inline-block;
     margin-right:10px;
 }
@@ -70,6 +71,7 @@ a{
 }
 
 body{
-    margin:0
+    margin:0;
+    overflow:hidden;
 }
 

@@ -1,4 +1,4 @@
-var navs = document.querySelector('.navItem');
+var navs = document.querySelector('.navItems');
 
 function init(){
     const testItem = navs.querySelector('.profile');
@@ -9,11 +9,15 @@ function init(){
 function leadToPage(e){
     var name = e.target.className;
 
-    fetch(`./nav/${name}.html`).then(function(response){
-        if(response.status != '404'){
-            console.log(response.status);
-        }else console.log('failed.');
+    fetch(`/nav/${name}.html`)
+    .then((res) =>{
+        console.log(`/nav/${name}.html`);
+        return res.text();
     })
+    .then((data)=>{
+        console.log(data);
+        document.querySelector('.section').innerHTML = data;
+    });
 }
 
 init();
